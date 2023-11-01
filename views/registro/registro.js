@@ -2,7 +2,7 @@ const formulario = document.querySelector('#formulario');
 const nameInput = document.querySelector('#nombre-input');
 const emailInput = document.querySelector('#email-input');
 const passwordInput = document.querySelector('#password-input');
-const matchInput = document.querySelector('#password-input');
+const matchInput = document.querySelector('#password-input2');
 const btnRegistro = document.querySelector('#form-btn');
 
 //validamos
