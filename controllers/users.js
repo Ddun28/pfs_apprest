@@ -8,6 +8,11 @@ userRouter.post('/', (request, response) => {
     //console.log(request.body);
     const {name, email, password} = request.body;
     console.log(name,email,password);
+
+    if(!name || !email || !password){
+        //console.log('campo vacio');
+        return response.status(400).json({error:'Todos los campos son requeridos'})
+    };
 })
 
 module.exports = userRouter; 
