@@ -12,7 +12,9 @@ userRouter.post('/', (request, response) => {
     if(!name || !email || !password){
         //console.log('campo vacio');
         return response.status(400).json({error:'Todos los campos son requeridos'})
-    };
+    }else{
+        return response.status(200).json({message:'Registrado sastifactoriamente'});
+    }
 })
 
 module.exports = userRouter; 
